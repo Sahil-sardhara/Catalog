@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
    Widget build(BuildContext context) {
      return Scaffold(
        appBar: AppBar(
-         backgroundColor: Colors.blue,
+         backgroundColor: Colors.deepPurple,
+
          title: Center(child: Text('Catalog App',style: TextStyle(color: Colors.white),)),
        ),
        body: Center(
