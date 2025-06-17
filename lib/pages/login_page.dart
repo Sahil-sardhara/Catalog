@@ -40,7 +40,7 @@ class _MyloginState extends State<Mylogin> {
           key: _keyvalue,
           child: Column(
             children: [
-              Image.asset("assets/image/images.png",fit: BoxFit.fill,height: 350,),
+              Image.asset("assets/image/login_image.jpg",fit: BoxFit.fill,height: 300,),
               SizedBox(height: 20,),
 
               Text('Welcome $name',

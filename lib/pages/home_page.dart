@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/widget/drawer.dart';
  class Homepage extends StatelessWidget {
    const Homepage({super.key});
  
@@ -15,7 +16,7 @@ import 'package:flutter/material.dart';
            child: Text('welcome to project'),
          ),
        ),
-       drawer: Drawer(backgroundColor: Colors.white,),
+       drawer: Mydrawer(),
      );
    }
  }
