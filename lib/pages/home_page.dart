@@ -7,9 +7,7 @@ import 'package:untitled/widget/drawer.dart';
    Widget build(BuildContext context) {
      return Scaffold(
        appBar: AppBar(
-         backgroundColor: Colors.deepPurple,
-
-         title: Center(child: Text('Catalog App',style: TextStyle(color: Colors.white),)),
+         title: Center(child: Text('Catalog App',)),
        ),
        body: Center(
          child: Container(
