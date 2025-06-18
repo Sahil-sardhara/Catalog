@@ -1,6 +1,6 @@
 class catalogmodel{
   static final items=[
-    Item(id: 01,
+    Item(id: 1,
         name: "iPhone 15 Pro Max",
         desc: "Apple iPhone 15th generation",
         price: 1299,
