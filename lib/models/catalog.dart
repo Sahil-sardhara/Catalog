@@ -1,12 +1,6 @@
 class catalogmodel{
-  static final items=[
-    Item(id: 1,
-        name: "iPhone 15 Pro Max",
-        desc: "Apple iPhone 15th generation",
-        price: 1299,
-        color: "#33505a",
-        image:"https://images.macrumors.com/t/OGS-wMpuHXbX6VkpJd6urJH1rEg=/1600x0/article-new/2023/09/iphone-15-pro-gray.jpg"
-    )
+  static List<Item> items=[
+
 
   ];
 
@@ -30,6 +24,31 @@ class Item{
     required this.price,
     required this.color,
     required this.image});
+
+
+  factory Item.formMap(Map<String,dynamic>map){
+    return Item(
+        id: map["id"],
+        name: map["name"],
+        desc: map["desc"],
+        price: map["price"],
+        color: map["color"],
+        image: map["image"]
+    );
+  }
+
+  tomap()=>{
+
+    "id":id,
+    "name":name,
+    "desc":desc,
+    "price":price,
+    "color":color,
+    "image":image,
+
+
+
+  };
 
 }
 

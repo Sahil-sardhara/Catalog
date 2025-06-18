@@ -22,32 +22,48 @@ class _HomepageState extends State<Homepage> {
 
   loadData() async {
 
+     await Future.delayed(Duration(seconds: 2));
+
      var catalogjson = await rootBundle.loadString("assets/files/catalog.json");
      var decodedata = jsonDecode(catalogjson);
      var productsdata = decodedata["products"];
+     catalogmodel.items=List.from(productsdata).map<Item>((item)=>Item.formMap(item)).toList();
+     setState(() {
+
+     });
 
 
   }
 
    @override
    Widget build(BuildContext context) {
-     final dumoylist = List.generate(5, (index)=> catalogmodel.items[0]);
+
      return Scaffold(
        appBar: AppBar(
          title: Center(child: Text('Catalog App',)),
        ),
        body: Padding(
          padding: const EdgeInsets.all(16.0),
-         child: ListView.builder(
-           itemCount: dumoylist.length,
-             itemBuilder: (context, index){
-             return ItemWidget(
-               item: dumoylist[index],
-
-
-             );
-             }
+         child: (catalogmodel.items!=null && catalogmodel.items.isNotEmpty)?
+         GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+             crossAxisCount:2,
+           mainAxisSpacing: 16,
+           crossAxisSpacing: 16
          ),
+             itemBuilder: (context , index){
+           final item = catalogmodel.items[index];
+           return Card(
+             clipBehavior: Clip.antiAlias,
+             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+             child: GridTile(child: Image.network(item.image),
+               header: Center(child: Text(item.name,style: TextStyle(color: Colors.deepPurple,fontSize: 16),)),
+               footer: Text(item.price.toString(),style: TextStyle(fontWeight: FontWeight.bold),),
+             ),
+           );
+
+
+             })
+             :Center(child: CircularProgressIndicator(),),
        ),
        drawer: Mydrawer(),
      );
