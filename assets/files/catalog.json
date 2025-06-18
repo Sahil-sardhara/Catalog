@@ -1,0 +1,86 @@
+{
+"products":[
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro Max",
+      "desc": "Apple iPhone 15th generation",
+      "price": 1299,
+      "color": "#33505a",
+      "image":
+"https://images.macrumors.com/t/OGS-wMpuHXbX6VkpJd6urJH1rEg=/1600x0/article-new/2023/09/iphone-15-pro-gray.jpg"
+    },
+  {
+        "id": 2,
+      "name": "Google pixel 7 pro",
+      "desc": "Google Pixel 7th Generation",
+      "price": 699,
+      "color": "#00ac51",
+      "image":
+         "https://m.media-amazon.com/images/I/61CB-MZkbYL.jpg"
+     },
+      {
+        "id": 3,
+      "name": "M2 Macbook Air",
+      "desc": "Apple mackbook air with silicon",
+      "price": 1099,
+      "color": "#e0bfae",
+      "image":
+         "https://ssscellular.co.za/wp-content/uploads/2024/07/macbook_air_13_in_silver_pdp_image_position-1__wwen.webp"
+     },
+      {
+        "id": 4,
+      "name": "Playstation 5",
+      "desc": "Sony Playstation 5th Generation",
+      "price": 500,
+      "color": "#544ee4",
+      "image":
+         "https://techstory.in/wp-content/uploads/2021/01/sony-finally-unveils-the-playstation-5-which-will-arrive-in_jfnp.jpg"
+     },
+     {
+        "id": 5,
+      "name": "Airpods pro",
+      "desc": "Apple Airpods pro 3 Generation",
+      "price": 200,
+      "color": "#e3e4e9",
+      "image":
+         "https://m.media-amazon.com/images/I/615ekapl+pL.jpg"
+     },
+     {
+        "id": 6,
+      "name": "ipad pro",
+      "desc": "Apple Ipad Pro 2023 Edition",
+      "price": 799,
+      "color": "#f73984",
+      "image":
+         "https://images.indianexpress.com/2023/12/apple-ipad-pro.jpg"
+     },
+     {
+        "id": 7,
+      "name": "Samsung S25 Ultra",
+      "desc": "Samasung galaxy S25 Ultra latest Edition",
+      "price": 1299,
+      "color": "#1c1c1c",
+      "image":
+         "https://m.media-amazon.com/images/I/71P85R392uL.jpg"
+     },
+     {
+        "id": 8,
+      "name": "Apple Watch",
+      "desc": "Apple Watch Latest Generation",
+      "price": 999,
+      "color": "#7c95eb",
+      "image":
+         "https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7_hero_09142021_big.jpg.slideshow-xlarge.jpg"
+     }
+     
+
+
+
+
+
+
+
+
+]
+
+}
